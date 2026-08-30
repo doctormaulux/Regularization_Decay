@@ -1,0 +1,22 @@
+{
+  "merged_csv": "gpt2_large_wikitext_standardized_results_robust.csv",
+  "scale": "large",
+  "shared_methods": {
+    "methods": [
+      "Baseline",
+      "WD-tuned",
+      "Tau(alpha=0)",
+      "τ(w)"
+    ],
+    "from": "gpt2_large_wikitext_standardized_results.csv"
+  },
+  "new_methods": {
+    "methods": [
+      "Huber-decay",
+      "PseudoHuber-decay",
+      "LogCosh-decay"
+    ],
+    "from": "gpt2_large_wikitext_standardized_results_robust_new.csv"
+  },
+  "note": "Section 5.10 head-to-head assembled from two invocations of the same script at the same scale, same seeds, same epoch budget and same PSO budget. The four shared methods were not re-trained."
+}

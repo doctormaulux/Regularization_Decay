@@ -1,0 +1,561 @@
+{
+  "experiment_name": "MNIST_Standardized",
+  "total_time": 32324.840515851974,
+  "best_hyperparams": {
+    "Baseline": {},
+    "L1": {
+      "lambda_val": 4.570563099801446e-05
+    },
+    "L2": {
+      "lambda_val": 4.570563099801446e-05
+    },
+    "ElasticNet": {
+      "lambda_val": 1.794806572672385e-05,
+      "en_alpha": 0.9
+    },
+    "SCAD": {
+      "lambda_val": 1.4883346552426318e-06,
+      "scad_a": 4.0267857660247905
+    },
+    "MCP": {
+      "lambda_val": 6.026889128682514e-06,
+      "mcp_gamma": 2.045980821176709
+    },
+    "LSP": {
+      "lambda_val": 1e-06,
+      "lsp_theta": 0.0005669849511478846
+    },
+    "WD-tuned": {
+      "wd": 0.0007459343285726549
+    },
+    "Tau(alpha=0)": {
+      "rho": 6.178368250385552e-05
+    },
+    "\u03c4(w)": {
+      "rho": 6.460313615939619e-07,
+      "delta": 0.08977861780446728
+    }
+  },
+  "results": {
+    "Baseline": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9789,
+          "val_acc": 0.9786666666666667,
+          "sparsity": 1.4059620229620737,
+          "convergence_epoch": 19,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9751,
+          "val_acc": 0.9788333333333333,
+          "sparsity": 1.621548502730762,
+          "convergence_epoch": 12,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9799,
+          "val_acc": 0.9811666666666666,
+          "sparsity": 1.3619992898327726,
+          "convergence_epoch": 24,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9767,
+          "val_acc": 0.977,
+          "sparsity": 1.531932162121033,
+          "convergence_epoch": 12,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9799,
+          "val_acc": 0.9791666666666666,
+          "sparsity": 1.3865169679241136,
+          "convergence_epoch": 23,
+          "total_params": 118282
+        }
+      }
+    ],
+    "L1": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9778,
+          "val_acc": 0.9798333333333333,
+          "sparsity": 48.79102483894422,
+          "convergence_epoch": 21,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9783,
+          "val_acc": 0.9788333333333333,
+          "sparsity": 44.16479261426083,
+          "convergence_epoch": 17,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9793,
+          "val_acc": 0.9776666666666667,
+          "sparsity": 44.64161918127864,
+          "convergence_epoch": 17,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9798,
+          "val_acc": 0.9805,
+          "sparsity": 52.82967822661098,
+          "convergence_epoch": 31,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9802,
+          "val_acc": 0.9795,
+          "sparsity": 55.227338056509026,
+          "convergence_epoch": 39,
+          "total_params": 118282
+        }
+      }
+    ],
+    "L2": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.979,
+          "val_acc": 0.9811666666666666,
+          "sparsity": 4.1079792360629686,
+          "convergence_epoch": 33,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9778,
+          "val_acc": 0.9793333333333333,
+          "sparsity": 4.638913782316837,
+          "convergence_epoch": 19,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9757,
+          "val_acc": 0.9795,
+          "sparsity": 4.604250858118733,
+          "convergence_epoch": 12,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9769,
+          "val_acc": 0.9778333333333333,
+          "sparsity": 3.1399536700427793,
+          "convergence_epoch": 20,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9794,
+          "val_acc": 0.9796666666666667,
+          "sparsity": 4.262694239191086,
+          "convergence_epoch": 14,
+          "total_params": 118282
+        }
+      }
+    ],
+    "ElasticNet": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9794,
+          "val_acc": 0.9803333333333333,
+          "sparsity": 19.88045518337532,
+          "convergence_epoch": 21,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9767,
+          "val_acc": 0.9793333333333333,
+          "sparsity": 22.91811095517492,
+          "convergence_epoch": 19,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.978,
+          "val_acc": 0.9805,
+          "sparsity": 29.757697705483505,
+          "convergence_epoch": 33,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9777,
+          "val_acc": 0.9791666666666666,
+          "sparsity": 20.94739689893644,
+          "convergence_epoch": 20,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9803,
+          "val_acc": 0.9788333333333333,
+          "sparsity": 17.225782452105985,
+          "convergence_epoch": 20,
+          "total_params": 118282
+        }
+      }
+    ],
+    "SCAD": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9806,
+          "val_acc": 0.9813333333333333,
+          "sparsity": 1.2495561454828292,
+          "convergence_epoch": 36,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9764,
+          "val_acc": 0.9795,
+          "sparsity": 1.8159990531103634,
+          "convergence_epoch": 7,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9798,
+          "val_acc": 0.9808333333333333,
+          "sparsity": 1.3366361745658681,
+          "convergence_epoch": 27,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9795,
+          "val_acc": 0.9775,
+          "sparsity": 1.408498334488764,
+          "convergence_epoch": 19,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9789,
+          "val_acc": 0.9786666666666667,
+          "sparsity": 1.2292656532693056,
+          "convergence_epoch": 30,
+          "total_params": 118282
+        }
+      }
+    ],
+    "MCP": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9798,
+          "val_acc": 0.9813333333333333,
+          "sparsity": 1.1895301060178218,
+          "convergence_epoch": 34,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9796,
+          "val_acc": 0.9798333333333333,
+          "sparsity": 1.5522226543345565,
+          "convergence_epoch": 15,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9785,
+          "val_acc": 0.9795,
+          "sparsity": 1.5471500312811755,
+          "convergence_epoch": 12,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9776,
+          "val_acc": 0.9775,
+          "sparsity": 1.5023418609763108,
+          "convergence_epoch": 18,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9778,
+          "val_acc": 0.9788333333333333,
+          "sparsity": 1.6435298692954126,
+          "convergence_epoch": 9,
+          "total_params": 118282
+        }
+      }
+    ],
+    "LSP": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9818,
+          "val_acc": 0.9813333333333333,
+          "sparsity": 87.44018531982888,
+          "convergence_epoch": 25,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.982,
+          "val_acc": 0.9805,
+          "sparsity": 85.52780642870428,
+          "convergence_epoch": 21,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9799,
+          "val_acc": 0.981,
+          "sparsity": 85.47961650969717,
+          "convergence_epoch": 26,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9834,
+          "val_acc": 0.978,
+          "sparsity": 86.05197747755365,
+          "convergence_epoch": 26,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9817,
+          "val_acc": 0.9783333333333334,
+          "sparsity": 81.18733196936135,
+          "convergence_epoch": 20,
+          "total_params": 118282
+        }
+      }
+    ],
+    "WD-tuned": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9794,
+          "val_acc": 0.98,
+          "sparsity": 1.3653810385350265,
+          "convergence_epoch": 23,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9779,
+          "val_acc": 0.9805,
+          "sparsity": 1.5107962327319457,
+          "convergence_epoch": 18,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.978,
+          "val_acc": 0.979,
+          "sparsity": 1.3340998630391776,
+          "convergence_epoch": 23,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9779,
+          "val_acc": 0.9756666666666667,
+          "sparsity": 1.668892984562317,
+          "convergence_epoch": 11,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.978,
+          "val_acc": 0.9783333333333334,
+          "sparsity": 1.610557819448437,
+          "convergence_epoch": 9,
+          "total_params": 118282
+        }
+      }
+    ],
+    "Tau(alpha=0)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9827,
+          "val_acc": 0.9828333333333333,
+          "sparsity": 2.0696302057794087,
+          "convergence_epoch": 32,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9793,
+          "val_acc": 0.9801666666666666,
+          "sparsity": 2.023131161123417,
+          "convergence_epoch": 13,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9783,
+          "val_acc": 0.9795,
+          "sparsity": 2.030740095703488,
+          "convergence_epoch": 18,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9813,
+          "val_acc": 0.9785,
+          "sparsity": 2.1871459731827327,
+          "convergence_epoch": 25,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9795,
+          "val_acc": 0.9805,
+          "sparsity": 1.9774775536429887,
+          "convergence_epoch": 17,
+          "total_params": 118282
+        }
+      }
+    ],
+    "\u03c4(w)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_acc": 0.9784,
+          "val_acc": 0.9801666666666666,
+          "sparsity": 1.2723829492230432,
+          "convergence_epoch": 30,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_acc": 0.9755,
+          "val_acc": 0.979,
+          "sparsity": 1.801626621125784,
+          "convergence_epoch": 7,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_acc": 0.9778,
+          "val_acc": 0.9793333333333333,
+          "sparsity": 1.4549973791447557,
+          "convergence_epoch": 23,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_acc": 0.9768,
+          "val_acc": 0.9773333333333334,
+          "sparsity": 1.6342300603642144,
+          "convergence_epoch": 11,
+          "total_params": 118282
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_acc": 0.9797,
+          "val_acc": 0.978,
+          "sparsity": 1.493887489220676,
+          "convergence_epoch": 14,
+          "total_params": 118282
+        }
+      }
+    ]
+  }
+}

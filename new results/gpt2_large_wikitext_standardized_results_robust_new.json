@@ -1,0 +1,191 @@
+{
+  "experiment_name": "GPT2_large_WikiText2_Standardized_Robust",
+  "total_time": 194142.47839736938,
+  "best_hyperparams": {
+    "Huber-decay": {
+      "decay_strength": 6.844891011038014e-05,
+      "delta": 0.8317152809387802
+    },
+    "PseudoHuber-decay": {
+      "decay_strength": 8.673038337663444e-05,
+      "delta": 0.7488264463017577
+    },
+    "LogCosh-decay": {
+      "decay_strength": 8.673038337663444e-05,
+      "delta": 0.7488264463017577
+    }
+  },
+  "results": {
+    "Huber-decay": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 59.17864867630353,
+          "val_ppl": 61.53598573799124,
+          "test_loss": 4.080560812583337,
+          "sparsity": 4.714387600659036,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 59.03419590210278,
+          "val_ppl": 61.520794411257754,
+          "test_loss": 4.0781168675684665,
+          "sparsity": 4.694900145260982,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 58.77094984011844,
+          "val_ppl": 61.24954129641654,
+          "test_loss": 4.073647682483379,
+          "sparsity": 4.704312557275723,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 59.15766273718596,
+          "val_ppl": 61.605099583681756,
+          "test_loss": 4.0802061295771335,
+          "sparsity": 4.699564460779534,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 59.12524230610094,
+          "val_ppl": 61.72524471976966,
+          "test_loss": 4.079657945004138,
+          "sparsity": 4.680779242303118,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "PseudoHuber-decay": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 58.94207650609293,
+          "val_ppl": 61.33358832251673,
+          "test_loss": 4.076555207535461,
+          "sparsity": 5.3336737379842845,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 58.93763210096191,
+          "val_ppl": 61.36581881107331,
+          "test_loss": 4.076479801764855,
+          "sparsity": 5.308141865872443,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 58.66033487221713,
+          "val_ppl": 61.16359626129277,
+          "test_loss": 4.071763772230882,
+          "sparsity": 5.32714948476222,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 58.99921897702385,
+          "val_ppl": 61.52631371445162,
+          "test_loss": 4.077524206140539,
+          "sparsity": 5.3156364551445785,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 58.96936827689145,
+          "val_ppl": 61.59685303118139,
+          "test_loss": 4.077018127336607,
+          "sparsity": 5.301719673114044,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "LogCosh-decay": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 58.96216567261735,
+          "val_ppl": 61.48156682412446,
+          "test_loss": 4.0768959784245755,
+          "sparsity": 5.322648161327432,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 58.89174574396509,
+          "val_ppl": 61.47233142614437,
+          "test_loss": 4.075700940666618,
+          "sparsity": 5.2976936163160255,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 58.64323222327446,
+          "val_ppl": 61.20290541789259,
+          "test_loss": 4.071472175828704,
+          "sparsity": 5.316125431395871,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 58.95161470905146,
+          "val_ppl": 61.531625651695954,
+          "test_loss": 4.076717017771124,
+          "sparsity": 5.310641585586991,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 58.9883258572359,
+          "val_ppl": 61.57843250244639,
+          "test_loss": 4.077339557500986,
+          "sparsity": 5.291732980579874,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      }
+    ]
+  }
+}

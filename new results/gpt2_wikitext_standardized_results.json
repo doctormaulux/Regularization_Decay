@@ -1,0 +1,611 @@
+{
+  "experiment_name": "gpt2_wikitext_assembled_from_journals",
+  "total_time": 0.008216142654418945,
+  "best_hyperparams": {
+    "Baseline": {},
+    "L1": {
+      "lambda_val": 1.1324654430748025e-05
+    },
+    "L2": {
+      "lambda_val": 1.1324654430748025e-05
+    },
+    "ElasticNet": {
+      "lambda_val": 1e-06,
+      "en_alpha": 0.3119162198107902
+    },
+    "SCAD": {
+      "lambda_val": 2.0754298605191997e-05,
+      "scad_a": 3.518554496150241
+    },
+    "MCP": {
+      "lambda_val": 6.895002018241064e-05,
+      "mcp_gamma": 2.215219257055
+    },
+    "LSP": {
+      "lambda_val": 1e-06,
+      "lsp_theta": 0.08106132233749928
+    },
+    "WD-tuned": {
+      "wd": 0.2641075593899792
+    },
+    "Tau(alpha=0)": {
+      "rho": 2.8318888640967393e-05
+    },
+    "\u03c4(w)": {
+      "rho": 3.5289240730104755e-05,
+      "delta": 1.1695530873881927
+    }
+  },
+  "results": {
+    "Baseline": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 66.27530321780962,
+          "val_ppl": 69.09479471572843,
+          "test_loss": 4.193817327310751,
+          "sparsity": 2.189838209990267,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 66.30968734901074,
+          "val_ppl": 69.44303863958868,
+          "test_loss": 4.194336000379625,
+          "sparsity": 2.1617443861234706,
+          "convergence_epoch": 15,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 66.11929475879771,
+          "val_ppl": 69.4656481919851,
+          "test_loss": 4.191460606816051,
+          "sparsity": 2.1970076343506673,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 66.63363485231525,
+          "val_ppl": 69.27257380414527,
+          "test_loss": 4.199209477875259,
+          "sparsity": 2.1965595453281423,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 66.0930261269457,
+          "val_ppl": 68.87163317833371,
+          "test_loss": 4.1910632364042515,
+          "sparsity": 2.19540537663376,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "L1": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 74.34016188501658,
+          "val_ppl": 78.38498907102631,
+          "test_loss": 4.308651342496767,
+          "sparsity": 70.70892300038237,
+          "convergence_epoch": 27,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 74.2247964740455,
+          "val_ppl": 78.56189826444418,
+          "test_loss": 4.307098278632531,
+          "sparsity": 71.25101566845106,
+          "convergence_epoch": 28,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 74.74183413350725,
+          "val_ppl": 78.80808751017383,
+          "test_loss": 4.3140399639423075,
+          "sparsity": 71.59854265155728,
+          "convergence_epoch": 29,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 74.29432091890982,
+          "val_ppl": 78.56945971586745,
+          "test_loss": 4.308034514332865,
+          "sparsity": 70.61160621176306,
+          "convergence_epoch": 27,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 74.45495596873464,
+          "val_ppl": 78.37718885671336,
+          "test_loss": 4.310194324661087,
+          "sparsity": 71.54655074648916,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "L2": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 66.13668082724874,
+          "val_ppl": 69.03662268164054,
+          "test_loss": 4.191723522249159,
+          "sparsity": 2.501151453003337,
+          "convergence_epoch": 16,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 66.15564785550697,
+          "val_ppl": 69.16231333810434,
+          "test_loss": 4.192010266440255,
+          "sparsity": 2.479262983175751,
+          "convergence_epoch": 17,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 66.20056131301406,
+          "val_ppl": 69.28267045442443,
+          "test_loss": 4.192688941955566,
+          "sparsity": 2.537677497566741,
+          "convergence_epoch": 15,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 66.38689824755342,
+          "val_ppl": 69.4319804161244,
+          "test_loss": 4.19549972146422,
+          "sparsity": 2.5240175716073416,
+          "convergence_epoch": 15,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 66.21289366724531,
+          "val_ppl": 68.88471434391096,
+          "test_loss": 4.192875212365454,
+          "sparsity": 2.474524102301168,
+          "convergence_epoch": 18,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "ElasticNet": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 65.81604099193893,
+          "val_ppl": 69.08855817941001,
+          "test_loss": 4.1868635926927835,
+          "sparsity": 2.7804195416782536,
+          "convergence_epoch": 15,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 66.32211162236162,
+          "val_ppl": 69.2880543343887,
+          "test_loss": 4.19452335022308,
+          "sparsity": 2.7768891433189653,
+          "convergence_epoch": 16,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 65.90378605876128,
+          "val_ppl": 69.11772811126133,
+          "test_loss": 4.188195891432709,
+          "sparsity": 2.822037506952169,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 66.29136289355289,
+          "val_ppl": 69.2321751190153,
+          "test_loss": 4.19405961560679,
+          "sparsity": 2.7948670180408786,
+          "convergence_epoch": 15,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 66.1353538847501,
+          "val_ppl": 68.46644244537104,
+          "test_loss": 4.191703458408733,
+          "sparsity": 2.8033942879240823,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "SCAD": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 66.31146689281772,
+          "val_ppl": 69.16237587004817,
+          "test_loss": 4.194362836879688,
+          "sparsity": 2.136529194765017,
+          "convergence_epoch": 16,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 66.3414698960675,
+          "val_ppl": 69.59800261892481,
+          "test_loss": 4.194815190283807,
+          "sparsity": 2.163156545467186,
+          "convergence_epoch": 15,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 66.13758759237778,
+          "val_ppl": 69.21473429686048,
+          "test_loss": 4.19173723262745,
+          "sparsity": 2.1904763973859844,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 66.56695319208784,
+          "val_ppl": 69.55582858520256,
+          "test_loss": 4.1982082560822205,
+          "sparsity": 2.1928797839613456,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 66.30539860667045,
+          "val_ppl": 68.79861937572953,
+          "test_loss": 4.194271320825095,
+          "sparsity": 2.19657312378337,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "MCP": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 66.27735342006508,
+          "val_ppl": 69.16318258002302,
+          "test_loss": 4.1938482614663934,
+          "sparsity": 2.173408279164349,
+          "convergence_epoch": 16,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 66.39175984275438,
+          "val_ppl": 69.61476144178624,
+          "test_loss": 4.195572950027802,
+          "sparsity": 2.192051498192436,
+          "convergence_epoch": 15,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 66.11110245486005,
+          "val_ppl": 69.24025314232418,
+          "test_loss": 4.191336697274512,
+          "sparsity": 2.2288626903156286,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 66.50827263946503,
+          "val_ppl": 69.56124769204895,
+          "test_loss": 4.197326340518155,
+          "sparsity": 2.2249656736651837,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 66.30806055801126,
+          "val_ppl": 68.81872157825232,
+          "test_loss": 4.194311466845837,
+          "sparsity": 2.213016633064516,
+          "convergence_epoch": 14,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "LSP": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 73.0889773452308,
+          "val_ppl": 77.04566780545889,
+          "test_loss": 4.291677566675039,
+          "sparsity": 73.41838153503893,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 72.8221540696216,
+          "val_ppl": 77.00410350291712,
+          "test_loss": 4.288020223051637,
+          "sparsity": 72.90534676115823,
+          "convergence_epoch": 28,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 73.61736678147895,
+          "val_ppl": 77.99138734963171,
+          "test_loss": 4.298880959605123,
+          "sparsity": 73.26960240110539,
+          "convergence_epoch": 29,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 73.25265619910735,
+          "val_ppl": 77.4197895713978,
+          "test_loss": 4.293914509343577,
+          "sparsity": 72.20148037750278,
+          "convergence_epoch": 27,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 73.08029484866931,
+          "val_ppl": 77.01820466634537,
+          "test_loss": 4.291558766103053,
+          "sparsity": 73.26129238650584,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "WD-tuned": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 62.02671550090451,
+          "val_ppl": 64.88542594252101,
+          "test_loss": 4.127565187412304,
+          "sparsity": 3.1797483314794213,
+          "convergence_epoch": 26,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 62.6468343055382,
+          "val_ppl": 65.15190228328169,
+          "test_loss": 4.137513150225629,
+          "sparsity": 3.1839712310553394,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 62.73215079176808,
+          "val_ppl": 65.20577085227042,
+          "test_loss": 4.138874088014875,
+          "sparsity": 3.2205108540739715,
+          "convergence_epoch": 29,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 62.86809460885637,
+          "val_ppl": 65.43236791231854,
+          "test_loss": 4.141038795093913,
+          "sparsity": 3.209865345175195,
+          "convergence_epoch": 29,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 62.75898111107136,
+          "val_ppl": 64.85698927414833,
+          "test_loss": 4.139301693046486,
+          "sparsity": 3.201297339926307,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "Tau(alpha=0)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 59.47124431995167,
+          "val_ppl": 62.23715485071139,
+          "test_loss": 4.085492906989632,
+          "sparsity": 2.992569326161012,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 59.84028655981801,
+          "val_ppl": 62.4304248873377,
+          "test_loss": 4.091679122421768,
+          "sparsity": 2.9717807112068964,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 59.94953604740653,
+          "val_ppl": 62.39631586715397,
+          "test_loss": 4.093503142451192,
+          "sparsity": 2.9966021273637375,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 60.15843036541349,
+          "val_ppl": 62.586921678527915,
+          "test_loss": 4.096981588300768,
+          "sparsity": 3.005903369194939,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 59.84201383679741,
+          "val_ppl": 62.10827836291755,
+          "test_loss": 4.0917079867897455,
+          "sparsity": 3.000987968402392,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      }
+    ],
+    "\u03c4(w)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 59.767600839051354,
+          "val_ppl": 62.46747952284966,
+          "test_loss": 4.090463722145165,
+          "sparsity": 3.357721144153226,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 60.12126445587599,
+          "val_ppl": 62.63430050261164,
+          "test_loss": 4.0963635968637995,
+          "sparsity": 3.336416547900445,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 60.265620147578026,
+          "val_ppl": 62.636132462221084,
+          "test_loss": 4.09876179433131,
+          "sparsity": 3.358983940489433,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 60.50871381225344,
+          "val_ppl": 62.864577401768756,
+          "test_loss": 4.10278738462008,
+          "sparsity": 3.365963266476641,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 60.15515570538532,
+          "val_ppl": 62.3297601883746,
+          "test_loss": 4.096927152885185,
+          "sparsity": 3.3707836180825916,
+          "convergence_epoch": 30,
+          "total_params": 7364608
+        }
+      }
+    ]
+  }
+}

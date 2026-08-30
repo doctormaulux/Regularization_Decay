@@ -1,0 +1,187 @@
+{
+  "experiment_name": "GPT2_large_WikiText2_Standardized_Data25",
+  "total_time": 10916.462983846664,
+  "best_hyperparams": {
+    "Baseline": {},
+    "Tau(alpha=0)": {
+      "rho": 6.178368250385552e-05
+    },
+    "\u03c4(w)": {
+      "rho": 0.00010032694612066098,
+      "delta": 0.6151992038021853
+    }
+  },
+  "results": {
+    "Baseline": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 129.58852065806826,
+          "val_ppl": 140.2009208149071,
+          "test_loss": 4.864364204825936,
+          "sparsity": 3.716592715990407,
+          "convergence_epoch": 6,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 130.02655279070575,
+          "val_ppl": 139.27839117427277,
+          "test_loss": 4.8677386818351325,
+          "sparsity": 3.654500348528867,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 129.98500276048807,
+          "val_ppl": 140.8012758321836,
+          "test_loss": 4.867419080419855,
+          "sparsity": 3.7166612640630183,
+          "convergence_epoch": 6,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 129.5249282315606,
+          "val_ppl": 139.12614346800882,
+          "test_loss": 4.863873358611222,
+          "sparsity": 3.6567015033049306,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 130.1204876238045,
+          "val_ppl": 139.76036029899385,
+          "test_loss": 4.868460849091247,
+          "sparsity": 3.7163992580965934,
+          "convergence_epoch": 6,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "Tau(alpha=0)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 127.93304420753329,
+          "val_ppl": 138.28726873743997,
+          "test_loss": 4.851507034930554,
+          "sparsity": 3.9288525844755977,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 128.18069593839817,
+          "val_ppl": 138.10320066902617,
+          "test_loss": 4.853440955445007,
+          "sparsity": 3.929921934408329,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 129.4030190117947,
+          "val_ppl": 138.87541470011715,
+          "test_loss": 4.862931712643131,
+          "sparsity": 3.924849377035116,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 128.2096885209218,
+          "val_ppl": 137.64916197126018,
+          "test_loss": 4.853667115117167,
+          "sparsity": 3.9267184544816427,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 128.48340722027396,
+          "val_ppl": 138.01645368664938,
+          "test_loss": 4.855799769307231,
+          "sparsity": 3.9211036056895505,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "\u03c4(w)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 127.7485758594058,
+          "val_ppl": 138.21460854739306,
+          "test_loss": 4.850064081150097,
+          "sparsity": 4.105880266929241,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 128.31086845748013,
+          "val_ppl": 137.95581285753715,
+          "test_loss": 4.854455979315789,
+          "sparsity": 4.107572642677482,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 129.77308188657753,
+          "val_ppl": 139.28355683018432,
+          "test_loss": 4.86578740130414,
+          "sparsity": 4.103618180533078,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 128.34968443086598,
+          "val_ppl": 137.8329859374838,
+          "test_loss": 4.854758448653168,
+          "sparsity": 4.109172097705072,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 128.0661107930472,
+          "val_ppl": 137.70587739254816,
+          "test_loss": 4.852546621154953,
+          "sparsity": 4.10002473823776,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      }
+    ]
+  }
+}

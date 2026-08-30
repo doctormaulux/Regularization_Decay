@@ -1,0 +1,25 @@
+# PyTorch with CUDA 12.1 support (compatible with CUDA 13.0 driver)
+# Optimized for NVIDIA Quadro P620 (2GB VRAM)
+#
+# NOTE: Install PyTorch first with:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# Then install the rest of the requirements normally
+
+# Core scientific computing
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+
+# HuggingFace libraries for transformer benchmarks
+# transformers 5.x needs torch.float8_e8m0fnu (torch>=2.7); cap at <5 so model
+# auto-loading works with the torch 2.4 we ship through cu121.
+transformers>=4.30.0,<5
+tokenizers<0.21    # matches transformers 4.x
+datasets>=2.14.0
+accelerate>=0.20.0
+sentencepiece>=0.1.99
+evaluate>=0.4.0  # For ROUGE metrics (T5 summarization)
+
+# Tests (CPU): pytest tests/ -q
+pytest>=7.0

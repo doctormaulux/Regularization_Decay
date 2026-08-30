@@ -1,0 +1,929 @@
+{
+  "experiment_name": "gpt2_large_wikitext_assembled_from_journals",
+  "total_time": 0.007467031478881836,
+  "best_hyperparams": {
+    "Baseline": {},
+    "L2": {
+      "lambda_val": 1.1324654430748025e-05
+    },
+    "ElasticNet": {
+      "lambda_val": 1e-06,
+      "en_alpha": 0.3119162198107902
+    },
+    "WD-tuned": {
+      "wd": 0.31124263528017876
+    },
+    "Tau(alpha=0)": {
+      "rho": 6.178368250385552e-05
+    },
+    "\u03c4(w)": {
+      "rho": 0.00010032694612066098,
+      "delta": 0.6151992038021853
+    },
+    "Tau(AdamW-scope)": {
+      "rho": 0.00033729222156470527,
+      "delta": 0.21663955588528122
+    },
+    "WD-tuned(weights)": {
+      "wd": 0.31124263528017876
+    }
+  },
+  "results": {
+    "Baseline": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 65.17155403463586,
+          "val_ppl": 68.20187208267417,
+          "test_loss": 4.177023085919055,
+          "sparsity": 3.052748808177511,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 65.22927069845905,
+          "val_ppl": 68.26069066885302,
+          "test_loss": 4.177908305283431,
+          "sparsity": 3.045479665899741,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 65.41978088736685,
+          "val_ppl": 67.98456695363829,
+          "test_loss": 4.180824672782814,
+          "sparsity": 3.091580529666387,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 65.9803913911477,
+          "val_ppl": 68.88692065983143,
+          "test_loss": 4.189357597749312,
+          "sparsity": 3.0433105002242287,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 66.11624283631794,
+          "val_ppl": 68.66109561124895,
+          "test_loss": 4.191414447931143,
+          "sparsity": 3.09166888051553,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 65.78801491230445,
+          "val_ppl": 68.70892650596333,
+          "test_loss": 4.186437677551102,
+          "sparsity": 3.0922629638114922,
+          "convergence_epoch": 7,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 65.65904135738867,
+          "val_ppl": 68.86768581423688,
+          "test_loss": 4.184475311866174,
+          "sparsity": 3.0377611529237427,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 65.33779620673695,
+          "val_ppl": 68.13305102931747,
+          "test_loss": 4.1795706775162245,
+          "sparsity": 3.039496180806052,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 65.70526973771541,
+          "val_ppl": 68.51508072421629,
+          "test_loss": 4.185179131371634,
+          "sparsity": 3.042711847056759,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 65.05584178946178,
+          "val_ppl": 68.19635447411244,
+          "test_loss": 4.1752460055298855,
+          "sparsity": 3.0442397074307332,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "L2": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 65.50162938319761,
+          "val_ppl": 68.54565677162105,
+          "test_loss": 4.182075018411155,
+          "sparsity": 8.659470845438415,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 65.87297377796573,
+          "val_ppl": 68.50230031150818,
+          "test_loss": 4.187728247799716,
+          "sparsity": 9.196307361027161,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 64.78314324077276,
+          "val_ppl": 67.85598842695539,
+          "test_loss": 4.171045434343946,
+          "sparsity": 9.024646231013707,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 66.01174889718631,
+          "val_ppl": 68.6629154781212,
+          "test_loss": 4.189832739777618,
+          "sparsity": 9.10861000350966,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 65.79365230444242,
+          "val_ppl": 68.4772088594285,
+          "test_loss": 4.186523364140437,
+          "sparsity": 9.192208186285024,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 65.47512873635353,
+          "val_ppl": 68.43941768757429,
+          "test_loss": 4.181670356582809,
+          "sparsity": 9.519637956499698,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 65.81271700783552,
+          "val_ppl": 69.18138648860116,
+          "test_loss": 4.18681308725378,
+          "sparsity": 9.117071882250864,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 65.42325540479625,
+          "val_ppl": 68.14785446542123,
+          "test_loss": 4.180877782486298,
+          "sparsity": 9.818606566966288,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 64.95342538593972,
+          "val_ppl": 68.38318154296245,
+          "test_loss": 4.173670480539511,
+          "sparsity": 9.288702546454267,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 65.17599091348818,
+          "val_ppl": 67.93903994236048,
+          "test_loss": 4.177091163593334,
+          "sparsity": 9.453906448027766,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "ElasticNet": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 64.38464038060913,
+          "val_ppl": 67.71385925038433,
+          "test_loss": 4.164875101257157,
+          "sparsity": 13.593206185290619,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 64.72007686399533,
+          "val_ppl": 67.95871317699061,
+          "test_loss": 4.170071460388519,
+          "sparsity": 13.986879289586055,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 64.55273124610672,
+          "val_ppl": 67.86451651729448,
+          "test_loss": 4.167482428498321,
+          "sparsity": 13.659199699728978,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 65.97098045900924,
+          "val_ppl": 68.20548160757559,
+          "test_loss": 4.189214955319415,
+          "sparsity": 13.724218308245753,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 65.50073253851266,
+          "val_ppl": 68.35466871822443,
+          "test_loss": 4.182061326372755,
+          "sparsity": 13.634391390605808,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 64.9203667164009,
+          "val_ppl": 68.15511103889602,
+          "test_loss": 4.173161391373519,
+          "sparsity": 13.920220097198122,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 65.59813160001481,
+          "val_ppl": 68.51461676174127,
+          "test_loss": 4.183547213837341,
+          "sparsity": 13.938694564412035,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 64.72603312943735,
+          "val_ppl": 67.47473650448883,
+          "test_loss": 4.1701634873400675,
+          "sparsity": 14.038035954530386,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 64.90546221980914,
+          "val_ppl": 67.86694568632834,
+          "test_loss": 4.172931783801907,
+          "sparsity": 14.03638775420672,
+          "convergence_epoch": 8,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 64.89439537470246,
+          "val_ppl": 67.6141717688502,
+          "test_loss": 4.172761262118161,
+          "sparsity": 13.785032634975725,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "WD-tuned": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 61.51330071315712,
+          "val_ppl": 64.21763268929118,
+          "test_loss": 4.119253423187759,
+          "sparsity": 3.9351590071558094,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 60.99054935784018,
+          "val_ppl": 64.01186365675049,
+          "test_loss": 4.110718923610645,
+          "sparsity": 3.9237221420632906,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 61.51778445590756,
+          "val_ppl": 63.85914157140295,
+          "test_loss": 4.11932631115337,
+          "sparsity": 3.949727757521399,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 61.70078269167387,
+          "val_ppl": 64.09037570587809,
+          "test_loss": 4.122296616271302,
+          "sparsity": 3.932704986156336,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 61.601502967720286,
+          "val_ppl": 63.9984806173333,
+          "test_loss": 4.120686269068456,
+          "sparsity": 3.920766958488506,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 62.059202572069786,
+          "val_ppl": 64.30969231673701,
+          "test_loss": 4.1280888096316835,
+          "sparsity": 3.9345420745023105,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 61.34314323230745,
+          "val_ppl": 64.32310797101971,
+          "test_loss": 4.11648340015621,
+          "sparsity": 3.921341239007936,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 61.39027422603687,
+          "val_ppl": 63.95532531954305,
+          "test_loss": 4.117251422379043,
+          "sparsity": 3.935800312457348,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 60.839831757258644,
+          "val_ppl": 63.94263280151531,
+          "test_loss": 4.108244702056214,
+          "sparsity": 3.928610381285706,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 61.108104271808386,
+          "val_ppl": 63.75192048067892,
+          "test_loss": 4.112644496854845,
+          "sparsity": 3.9266011611129525,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "Tau(alpha=0)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 59.42338623389876,
+          "val_ppl": 61.855683090847656,
+          "test_loss": 4.084687856527475,
+          "sparsity": 4.503679965195858,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 59.141937928737676,
+          "val_ppl": 61.81291774555888,
+          "test_loss": 4.079940282381498,
+          "sparsity": 4.4886862167800805,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 59.07290576155196,
+          "val_ppl": 61.611648783208665,
+          "test_loss": 4.07877237194187,
+          "sparsity": 4.501498613196326,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 59.39204354076541,
+          "val_ppl": 61.96823078515404,
+          "test_loss": 4.08416027027172,
+          "sparsity": 4.49689979916938,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 59.53032689718533,
+          "val_ppl": 61.87959328829189,
+          "test_loss": 4.08648587845184,
+          "sparsity": 4.48053356601088,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 59.297657859132634,
+          "val_ppl": 61.79495878140468,
+          "test_loss": 4.082569808750362,
+          "sparsity": 4.487889535847291,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 59.361678992869535,
+          "val_ppl": 62.008763053275764,
+          "test_loss": 4.083648883379423,
+          "sparsity": 4.489013724238111,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 59.16429258801087,
+          "val_ppl": 61.8299543618824,
+          "test_loss": 4.080318194169265,
+          "sparsity": 4.490386208980833,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 59.08989592431031,
+          "val_ppl": 61.87238186267877,
+          "test_loss": 4.079059944048033,
+          "sparsity": 4.49397812798565,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 59.08213464904467,
+          "val_ppl": 61.74348816231205,
+          "test_loss": 4.07892858851087,
+          "sparsity": 4.492337544114493,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "\u03c4(w)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 59.06921151500509,
+          "val_ppl": 61.477712751297496,
+          "test_loss": 4.078709832914583,
+          "sparsity": 5.805080356620586,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 58.916072205022886,
+          "val_ppl": 61.5936411131936,
+          "test_loss": 4.076113926185356,
+          "sparsity": 5.790197808411488,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 58.86984927313738,
+          "val_ppl": 61.15417666734396,
+          "test_loss": 4.075329062702892,
+          "sparsity": 5.8025608341295065,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 59.199502468337734,
+          "val_ppl": 61.735172811539655,
+          "test_loss": 4.080913137603592,
+          "sparsity": 5.795521708717609,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 59.323602105994205,
+          "val_ppl": 61.521769725819766,
+          "test_loss": 4.083007238723419,
+          "sparsity": 5.780282710530934,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 59.037838307011086,
+          "val_ppl": 61.55888126030316,
+          "test_loss": 4.0781785655807665,
+          "sparsity": 5.787093342367462,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 59.087831352810724,
+          "val_ppl": 61.695987908875466,
+          "test_loss": 4.079025003936264,
+          "sparsity": 5.789213762746895,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 58.88657059323526,
+          "val_ppl": 61.48009853209122,
+          "test_loss": 4.075613061150352,
+          "sparsity": 5.790047002651744,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 58.784548064121225,
+          "val_ppl": 61.45893602644677,
+          "test_loss": 4.073879032344609,
+          "sparsity": 5.792814821494726,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 58.774549670744214,
+          "val_ppl": 61.32875701349843,
+          "test_loss": 4.0737089324783495,
+          "sparsity": 5.7935231515783725,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "Tau(AdamW-scope)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 60.03245867202538,
+          "val_ppl": 62.360808760769544,
+          "test_loss": 4.094885393813416,
+          "sparsity": 7.539369443036247,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 59.936741804984585,
+          "val_ppl": 62.32615264747298,
+          "test_loss": 4.093289702803224,
+          "sparsity": 7.507132046132549,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 59.73223539218747,
+          "val_ppl": 62.0864309416091,
+          "test_loss": 4.089871830992646,
+          "sparsity": 7.548203004660051,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 60.18541964474214,
+          "val_ppl": 62.60747326275863,
+          "test_loss": 4.097430124387636,
+          "sparsity": 7.536510226763117,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 59.95625605792356,
+          "val_ppl": 62.25306914645272,
+          "test_loss": 4.0936152306231826,
+          "sparsity": 7.489309547253691,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 59.726247940525454,
+          "val_ppl": 62.19482173424259,
+          "test_loss": 4.0897715877700636,
+          "sparsity": 7.499393730380019,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 60.072526164511494,
+          "val_ppl": 62.570873408132634,
+          "test_loss": 4.095552601657071,
+          "sparsity": 7.505890564373038,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 59.81074023997381,
+          "val_ppl": 62.36309943650686,
+          "test_loss": 4.091185247505104,
+          "sparsity": 7.566471827656131,
+          "convergence_epoch": 12,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 59.341617887465254,
+          "val_ppl": 62.17655062890668,
+          "test_loss": 4.083310879193819,
+          "sparsity": 7.514484969387953,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 59.66443941768537,
+          "val_ppl": 62.13667249554045,
+          "test_loss": 4.088736188280714,
+          "sparsity": 7.520393813247021,
+          "convergence_epoch": 11,
+          "total_params": 65647360
+        }
+      }
+    ],
+    "WD-tuned(weights)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 61.423606104240925,
+          "val_ppl": 64.11653403280907,
+          "test_loss": 4.1177942255041105,
+          "sparsity": 3.950110103437518,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 61.007527626441046,
+          "val_ppl": 64.00700648438973,
+          "test_loss": 4.110997260271848,
+          "sparsity": 3.918989278472127,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 61.58602374537068,
+          "val_ppl": 63.90753354017032,
+          "test_loss": 4.120434957546192,
+          "sparsity": 3.946781713689629,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 3,
+        "metrics": {
+          "test_ppl": 61.660658725322634,
+          "val_ppl": 64.09388214286291,
+          "test_loss": 4.1216461055881375,
+          "sparsity": 3.9340180625694625,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 4,
+        "metrics": {
+          "test_ppl": 61.56049389457084,
+          "val_ppl": 63.960623969865374,
+          "test_loss": 4.120020331917228,
+          "sparsity": 3.9172999493048923,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 5,
+        "metrics": {
+          "test_ppl": 62.10362894234478,
+          "val_ppl": 64.37735791064445,
+          "test_loss": 4.128804424306849,
+          "sparsity": 3.9355931449490122,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 6,
+        "metrics": {
+          "test_ppl": 61.24070101875958,
+          "val_ppl": 64.30390580528407,
+          "test_loss": 4.114812017797114,
+          "sparsity": 3.917714284321563,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 7,
+        "metrics": {
+          "test_ppl": 61.42368157993617,
+          "val_ppl": 63.956381806387256,
+          "test_loss": 4.117795454276787,
+          "sparsity": 3.936188751535477,
+          "convergence_epoch": 10,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 8,
+        "metrics": {
+          "test_ppl": 60.83003601765059,
+          "val_ppl": 63.96136624372143,
+          "test_loss": 4.108083680435851,
+          "sparsity": 3.9252484791467626,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      },
+      {
+        "run": 9,
+        "metrics": {
+          "test_ppl": 61.040819454336216,
+          "val_ppl": 63.770900157457376,
+          "test_loss": 4.111542811760535,
+          "sparsity": 3.9270063563866087,
+          "convergence_epoch": 9,
+          "total_params": 65647360
+        }
+      }
+    ]
+  }
+}

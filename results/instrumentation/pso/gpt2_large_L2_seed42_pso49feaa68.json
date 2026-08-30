@@ -1,0 +1,77 @@
+{
+  "benchmark": "gpt2_large",
+  "method": "L2",
+  "seed": 42,
+  "phase": "pso",
+  "hyperparams": {
+    "lambda_val": 0.056698495114788465
+  },
+  "best_epoch": 1,
+  "last_epoch": 5,
+  "schedule_epochs": 12,
+  "final": {
+    "test_ppl": 382.69127719879384,
+    "val_ppl": 406.4613628756666,
+    "test_loss": 5.947228599380661,
+    "sparsity": 87.47098131592801,
+    "convergence_epoch": 1,
+    "total_params": 65647360
+  },
+  "trajectory": [
+    {
+      "epoch": 1,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 406.4613628756666,
+      "mean_abs_w": 0.0008310909033752978,
+      "median_abs_w": 9.388491889694706e-05,
+      "max_abs_w": 0.9354786276817322,
+      "l2_norm": 119.04634094238281,
+      "frac_below_thr": 0.8753272310403061,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 2,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 418.9065069728482,
+      "mean_abs_w": 0.0002351886359974742,
+      "median_abs_w": 1.4695987147206324e-06,
+      "max_abs_w": 0.7571969032287598,
+      "l2_norm": 95.55339050292969,
+      "frac_below_thr": 0.9925710591950488,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 3,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 427.75140963780933,
+      "mean_abs_w": 0.00018164889479521662,
+      "median_abs_w": 3.3290522338802475e-08,
+      "max_abs_w": 0.5480623245239258,
+      "l2_norm": 68.47174835205078,
+      "frac_below_thr": 0.9929681017610137,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 4,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 444.1365589188415,
+      "mean_abs_w": 0.000136843606014736,
+      "median_abs_w": 1.5243616091620282e-10,
+      "max_abs_w": 0.38127997517585754,
+      "l2_norm": 45.573123931884766,
+      "frac_below_thr": 0.9930110380609326,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 5,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 456.8333858957006,
+      "mean_abs_w": 9.826251334743574e-05,
+      "median_abs_w": 1.3324790489738225e-14,
+      "max_abs_w": 0.2999935746192932,
+      "l2_norm": 26.747817993164062,
+      "frac_below_thr": 0.9933368963598559,
+      "n_params_tracked": 65562240
+    }
+  ]
+}

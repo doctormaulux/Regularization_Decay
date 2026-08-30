@@ -1,0 +1,236 @@
+{
+  "experiment_name": "SmolLM2_WikiText2_Standardized",
+  "total_time": 0.12965679168701172,
+  "best_hyperparams": {
+    "Baseline": {},
+    "L2": {
+      "lambda_val": 1.1324654430748025e-05
+    },
+    "ElasticNet": {
+      "lambda_val": 1e-06,
+      "en_alpha": 0.3119162198107902
+    },
+    "WD-tuned": {
+      "wd": 0.0009846738873614564
+    },
+    "Tau(alpha=0)": {
+      "rho": 1.0647768008859035e-05
+    },
+    "\u03c4(w)": {
+      "rho": 2.474459556437816e-06,
+      "delta": 0.04623529242381536
+    }
+  },
+  "results": {
+    "Baseline": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 16.386798103815263,
+          "val_ppl": 16.98238085645765,
+          "test_loss": 2.7964760169789598,
+          "sparsity": 0.529004168813639,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 16.367444234052783,
+          "val_ppl": 16.97759102700108,
+          "test_loss": 2.795294254212766,
+          "sparsity": 0.5293520853821754,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 16.404059937248714,
+          "val_ppl": 17.005937353589548,
+          "test_loss": 2.7975288613422498,
+          "sparsity": 0.5281261998661145,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      }
+    ],
+    "L2": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 16.48101935251754,
+          "val_ppl": 17.05919717907593,
+          "test_loss": 2.8022093764833502,
+          "sparsity": 1.0055933684366283,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 16.453734582024957,
+          "val_ppl": 17.06067173865925,
+          "test_loss": 2.800552477707734,
+          "sparsity": 1.0064319365761774,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 16.489567481531793,
+          "val_ppl": 17.08754556645949,
+          "test_loss": 2.8027279070905737,
+          "sparsity": 1.0054313047358998,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      }
+    ],
+    "ElasticNet": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 16.41975825592284,
+          "val_ppl": 17.00809216165775,
+          "test_loss": 2.7984853813777097,
+          "sparsity": 2.0153892419201282,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 16.39965086698791,
+          "val_ppl": 17.007323420449353,
+          "test_loss": 2.797260046005249,
+          "sparsity": 2.0179421169123373,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 16.437430180825668,
+          "val_ppl": 17.03647255738548,
+          "test_loss": 2.7995610623746305,
+          "sparsity": 2.0192393699296365,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      }
+    ],
+    "WD-tuned": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 16.386798301800926,
+          "val_ppl": 16.981951957181252,
+          "test_loss": 2.7964760290609822,
+          "sparsity": 0.5290584378510389,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 16.36721475125344,
+          "val_ppl": 16.97784661466131,
+          "test_loss": 2.795280233428285,
+          "sparsity": 0.5293394473871644,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 16.405433546783968,
+          "val_ppl": 17.00702621726571,
+          "test_loss": 2.7976125937861367,
+          "sparsity": 0.5280867990581393,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      }
+    ],
+    "Tau(alpha=0)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 16.39737034394989,
+          "val_ppl": 16.9926739185378,
+          "test_loss": 2.7971209770924337,
+          "sparsity": 0.5358197651818896,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 16.377177070491435,
+          "val_ppl": 16.987594650423873,
+          "test_loss": 2.795888723553838,
+          "sparsity": 0.5363817842541406,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 16.41366081626843,
+          "val_ppl": 17.01574539454034,
+          "test_loss": 2.79811396469941,
+          "sparsity": 0.5349484869376062,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      }
+    ],
+    "\u03c4(w)": [
+      {
+        "run": 0,
+        "metrics": {
+          "test_ppl": 16.38740573308602,
+          "val_ppl": 16.98166958597688,
+          "test_loss": 2.7965130967062874,
+          "sparsity": 0.530503629751113,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 1,
+        "metrics": {
+          "test_ppl": 16.36897504982517,
+          "val_ppl": 16.977701951915545,
+          "test_loss": 2.7953877779277594,
+          "sparsity": 0.5309794130927012,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      },
+      {
+        "run": 2,
+        "metrics": {
+          "test_ppl": 16.404976862200186,
+          "val_ppl": 17.00672914403631,
+          "test_loss": 2.7975847560006217,
+          "sparsity": 0.5297892113272594,
+          "convergence_epoch": 1,
+          "total_params": 134515008
+        }
+      }
+    ]
+  }
+}

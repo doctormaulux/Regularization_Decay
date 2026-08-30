@@ -1,0 +1,77 @@
+{
+  "benchmark": "gpt2_medium",
+  "method": "L2",
+  "seed": 42,
+  "phase": "pso",
+  "hyperparams": {
+    "lambda_val": 0.056698495114788465
+  },
+  "best_epoch": 1,
+  "last_epoch": 5,
+  "schedule_epochs": 12,
+  "final": {
+    "test_ppl": 426.04032901368447,
+    "val_ppl": 452.02100929517945,
+    "test_loss": 6.054534010834747,
+    "sparsity": 84.54969190700038,
+    "convergence_epoch": 1,
+    "total_params": 18134784
+  },
+  "trajectory": [
+    {
+      "epoch": 1,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 452.02100929517945,
+      "mean_abs_w": 0.0011120055569335818,
+      "median_abs_w": 0.00019153059110976756,
+      "max_abs_w": 0.9377743601799011,
+      "l2_norm": 76.20948028564453,
+      "frac_below_thr": 0.8464515667098034,
+      "n_params_tracked": 18100608
+    },
+    {
+      "epoch": 2,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 463.2277397114312,
+      "mean_abs_w": 0.0004032631986774504,
+      "median_abs_w": 5.57528983335942e-06,
+      "max_abs_w": 0.7649757862091064,
+      "l2_norm": 61.68830490112305,
+      "frac_below_thr": 0.980943071083579,
+      "n_params_tracked": 18100608
+    },
+    {
+      "epoch": 3,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 472.1041412670438,
+      "mean_abs_w": 0.0003196666366420686,
+      "median_abs_w": 4.794017058884492e-07,
+      "max_abs_w": 0.5616980791091919,
+      "l2_norm": 44.97984313964844,
+      "frac_below_thr": 0.983040293453126,
+      "n_params_tracked": 18100608
+    },
+    {
+      "epoch": 4,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 483.6588582356616,
+      "mean_abs_w": 0.00025603955145925283,
+      "median_abs_w": 1.9124268835213343e-09,
+      "max_abs_w": 0.40223145484924316,
+      "l2_norm": 31.035079956054688,
+      "frac_below_thr": 0.9836683939014645,
+      "n_params_tracked": 18100608
+    },
+    {
+      "epoch": 5,
+      "train_ppl": 485165195.4097903,
+      "val_ppl": 493.7689632073727,
+      "mean_abs_w": 0.00020951231999788433,
+      "median_abs_w": 3.868926012895457e-12,
+      "max_abs_w": 0.3641398847103119,
+      "l2_norm": 19.85809898376465,
+      "frac_below_thr": 0.9825208633875724,
+      "n_params_tracked": 18100608
+    }
+  ]
+}

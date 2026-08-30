@@ -1,0 +1,78 @@
+{
+  "benchmark": "gpt2_large",
+  "method": "Tau(AdamW-scope)",
+  "seed": 42,
+  "phase": "pso",
+  "hyperparams": {
+    "rho": 0.0204779174680962,
+    "delta": 0.12502747149043494
+  },
+  "best_epoch": 1,
+  "last_epoch": 5,
+  "schedule_epochs": 12,
+  "final": {
+    "test_ppl": 417.8894674079969,
+    "val_ppl": 441.3968113058672,
+    "test_loss": 6.035216965518155,
+    "sparsity": 77.7954528559869,
+    "convergence_epoch": 1,
+    "total_params": 65647360
+  },
+  "trajectory": [
+    {
+      "epoch": 1,
+      "train_ppl": 618.1283909314071,
+      "val_ppl": 441.3968113058672,
+      "mean_abs_w": 0.0009185743983834982,
+      "median_abs_w": 0.00046481459867209196,
+      "max_abs_w": 0.7003472447395325,
+      "l2_norm": 75.57190704345703,
+      "frac_below_thr": 0.7778470808807021,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 2,
+      "train_ppl": 1286.8317321374868,
+      "val_ppl": 6252.446807753228,
+      "mean_abs_w": 0.00016338849673047662,
+      "median_abs_w": 1.4315484122562339e-06,
+      "max_abs_w": 0.15635856986045837,
+      "l2_norm": 7.716366767883301,
+      "frac_below_thr": 0.9619860151208989,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 3,
+      "train_ppl": 8095.989384341124,
+      "val_ppl": 7238.709870260684,
+      "mean_abs_w": 3.0014169169589877e-05,
+      "median_abs_w": 9.653634228806718e-13,
+      "max_abs_w": 0.12400051206350327,
+      "l2_norm": 5.7568817138671875,
+      "frac_below_thr": 0.9962608507579973,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 4,
+      "train_ppl": 7845.778431407461,
+      "val_ppl": 6517.8177152593935,
+      "mean_abs_w": 5.1298124162713066e-05,
+      "median_abs_w": 3.8960988536926466e-18,
+      "max_abs_w": 0.13742375373840332,
+      "l2_norm": 7.183298110961914,
+      "frac_below_thr": 0.9883693723704376,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 5,
+      "train_ppl": 5363.4246607608075,
+      "val_ppl": 4012.4711947765295,
+      "mean_abs_w": 0.0001871375134214759,
+      "median_abs_w": 5.2121305340844224e-23,
+      "max_abs_w": 0.12300000339746475,
+      "l2_norm": 14.617239952087402,
+      "frac_below_thr": 0.9754577329877686,
+      "n_params_tracked": 65562240
+    }
+  ]
+}

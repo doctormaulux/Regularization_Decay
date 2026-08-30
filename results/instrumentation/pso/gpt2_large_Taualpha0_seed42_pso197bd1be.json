@@ -1,0 +1,88 @@
+{
+  "benchmark": "gpt2_large",
+  "method": "Tau(alpha=0)",
+  "seed": 42,
+  "phase": "pso",
+  "hyperparams": {
+    "rho": 0.4891582316685986
+  },
+  "best_epoch": 2,
+  "last_epoch": 6,
+  "schedule_epochs": 12,
+  "final": {
+    "test_ppl": 8931.220298243275,
+    "val_ppl": 8945.848175441304,
+    "test_loss": 9.097308316073574,
+    "sparsity": 99.9931421461579,
+    "convergence_epoch": 2,
+    "total_params": 65647360
+  },
+  "trajectory": [
+    {
+      "epoch": 1,
+      "train_ppl": 9964.313845367094,
+      "val_ppl": 9814.041081200872,
+      "mean_abs_w": 1.955291190824937e-05,
+      "median_abs_w": 4.607048791939461e-14,
+      "max_abs_w": 0.000728386570699513,
+      "l2_norm": 0.5644029974937439,
+      "frac_below_thr": 1.0,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 2,
+      "train_ppl": 9442.290141487656,
+      "val_ppl": 8945.848175441304,
+      "mean_abs_w": 2.9828008337062784e-05,
+      "median_abs_w": 1.6951284126376365e-14,
+      "max_abs_w": 0.0007321744924411178,
+      "l2_norm": 0.8450924754142761,
+      "frac_below_thr": 1.0,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 3,
+      "train_ppl": 9000.562158205863,
+      "val_ppl": 9002.032906251121,
+      "mean_abs_w": 1.8302711396245286e-05,
+      "median_abs_w": 7.299422889994181e-16,
+      "max_abs_w": 0.00039948264020495117,
+      "l2_norm": 0.5186811089515686,
+      "frac_below_thr": 1.0,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 4,
+      "train_ppl": 9018.051142189452,
+      "val_ppl": 9014.299867051484,
+      "mean_abs_w": 1.4810680113441776e-05,
+      "median_abs_w": 2.2798542931927695e-16,
+      "max_abs_w": 0.0003201874496880919,
+      "l2_norm": 0.42020443081855774,
+      "frac_below_thr": 1.0,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 5,
+      "train_ppl": 9036.521343838413,
+      "val_ppl": 9016.502232597555,
+      "mean_abs_w": 1.2951735698152333e-05,
+      "median_abs_w": 1.8929164079972043e-16,
+      "max_abs_w": 0.00027650565607473254,
+      "l2_norm": 0.3672395944595337,
+      "frac_below_thr": 1.0,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 6,
+      "train_ppl": 9076.954570743908,
+      "val_ppl": 9096.114218632501,
+      "mean_abs_w": 1.0593398656055797e-05,
+      "median_abs_w": 1.0836066024444663e-16,
+      "max_abs_w": 0.00023205495381262153,
+      "l2_norm": 0.3004136383533478,
+      "frac_below_thr": 1.0,
+      "n_params_tracked": 65562240
+    }
+  ]
+}

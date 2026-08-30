@@ -1,0 +1,10 @@
+# One pod per line: <tag> <ip> <ssh-port> <results stem (csv/json/journal basename without extension)>
+# Copy to pods.conf (git-ignored) and fill in from the RunPod console.
+A1_tau        1.2.3.4  10001  gpt2_large_wikitext_standardized_results
+A1_adamw      1.2.3.5  10002  gpt2_large_wikitext_standardized_results
+A1_en_l2      1.2.3.6  10003  gpt2_large_wikitext_standardized_results
+A1_base_wd_a0 1.2.3.7  10004  gpt2_large_wikitext_standardized_results
+A2_small      1.2.3.8  10005  gpt2_wikitext_standardized_results
+B1_custom     1.2.3.9  10006  smollm2_wikitext_standardized_results
+B1_vit        1.2.3.10 10007  vit_cifar_standardized_results
+B3            1.2.3.11 10008  gpt2_medium_wikitext_standardized_results

@@ -1,0 +1,78 @@
+{
+  "benchmark": "gpt2_large",
+  "method": "Tau(AdamW-scope)",
+  "seed": 42,
+  "phase": "pso",
+  "hyperparams": {
+    "rho": 0.0879459923506132,
+    "delta": 0.008670563589903124
+  },
+  "best_epoch": 1,
+  "last_epoch": 5,
+  "schedule_epochs": 12,
+  "final": {
+    "test_ppl": 814.5087007435524,
+    "val_ppl": 852.3741909651121,
+    "test_loss": 6.70258511029757,
+    "sparsity": 96.64906555267416,
+    "convergence_epoch": 1,
+    "total_params": 65647360
+  },
+  "trajectory": [
+    {
+      "epoch": 1,
+      "train_ppl": 864.1364226793528,
+      "val_ppl": 852.3741909651121,
+      "mean_abs_w": 0.000339133373927325,
+      "median_abs_w": 1.1991574865533039e-05,
+      "max_abs_w": 0.9895473718643188,
+      "l2_norm": 109.10601806640625,
+      "frac_below_thr": 0.9664633331625033,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 2,
+      "train_ppl": 1172.4367313368941,
+      "val_ppl": 1521.0478258694527,
+      "mean_abs_w": 0.00011789651762228459,
+      "median_abs_w": 3.068332254940742e-09,
+      "max_abs_w": 0.9293439984321594,
+      "l2_norm": 56.40023422241211,
+      "frac_below_thr": 0.9984345104743219,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 3,
+      "train_ppl": 4142.0104171131825,
+      "val_ppl": 8202.889688768126,
+      "mean_abs_w": 1.5126183825486805e-06,
+      "median_abs_w": 1.1123785556494215e-25,
+      "max_abs_w": 0.7122206091880798,
+      "l2_norm": 2.173941135406494,
+      "frac_below_thr": 0.9998559536708935,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 4,
+      "train_ppl": 9068.228222929192,
+      "val_ppl": 9468.823768662978,
+      "mean_abs_w": 5.650505272569717e-07,
+      "median_abs_w": 5.0530822623552904e-42,
+      "max_abs_w": 0.3458932936191559,
+      "l2_norm": 0.9064130783081055,
+      "frac_below_thr": 0.9998681405638368,
+      "n_params_tracked": 65562240
+    },
+    {
+      "epoch": 5,
+      "train_ppl": 8943.300319854512,
+      "val_ppl": 8364.927388070673,
+      "mean_abs_w": 3.3560550036781933e-06,
+      "median_abs_w": 5.853223685484761e-42,
+      "max_abs_w": 0.20368051528930664,
+      "l2_norm": 2.7407546043395996,
+      "frac_below_thr": 0.9998218181685068,
+      "n_params_tracked": 65562240
+    }
+  ]
+}
